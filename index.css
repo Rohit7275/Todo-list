@@ -1,0 +1,99 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.container {
+  margin: 150px auto 100px;
+  width: 600px;
+}
+
+h1 {
+  background-color: #45c556ee;
+	color: white;
+	margin: 0;
+	padding: 12px 20px;
+  font-size: 24px;
+  font-weight: 400;
+  border-radius: 18px 18px 0 0;
+}
+
+form {
+  margin: 0;
+}
+
+input{
+  width: 100%;
+	font-size: 18px;
+	background-color: #f7f7f7;
+	color: darkgreen;
+	max-width: 100%;
+	padding: 13px 13px 13px 20px;
+  box-sizing: border-box; 
+  border: none;
+	border-bottom: 2px solid  #45c556ee;
+}
+
+input:focus,
+input:active {
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+}
+
+.todos li {
+  background-color: #fff;
+}
+
+.todos li:nth-child(2n) {
+  background-color: whitesmoke;
+}
+
+.todos li span {	
+	color: #666;
+}
+
+.todo-item i {
+  background-color: #e74c3c;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0;
+	display: inline-block;
+	transition: 0.2s linear;
+  opacity: 0;
+  padding: 12px 5px;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.todo-item:hover i {
+  width: 40px;
+	opacity: 1.0;
+}
+
+.add input {
+  border-radius: 0 0 18px 18px;
+  border-top: 2px solid  #45c556ee;
+}
+
+.filtered {
+  display: none;
+}
+
+
+
